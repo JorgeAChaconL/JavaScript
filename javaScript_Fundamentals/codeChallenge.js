@@ -84,3 +84,29 @@ const reportingForDuty = (rank, lastName) => {
 // Uncomment the line below when you're ready to try out your function
 console.log(reportingForDuty("Private", "Fido")); // Should return 'Private Fido reporting for duty!'
 console.log(reportingForDuty("Sargent", "Hernandez")); // Should return 'Private Fido reporting for duty!'
+
+// calculate Weight of different plantes based on earth. Use of Switch / case statements. Arrow Function Definition.
+const calculateWeight = (earthWeight, planet) =>{
+    planet = planet.toLowerCase();
+  
+    switch(planet){
+      case 'mercury':
+        return earthWeight * 0.378;
+      case 'venus':
+        return earthWeight * 0.907;
+      case 'mars':
+        return earthWeight * 0.377;
+      case 'jupiter':
+        return earthWeight * 2.36;
+      case 'saturn':
+        return earthWeight * 0.916;
+      default:
+        return `Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.`;
+    }
+  
+  }
+  
+  // Uncomment the line below when you're ready to try out your function
+  console.log(calculateWeight(100, 'Jupiter')) // Should print 236
+  console.log(calculateWeight(100, 'Venus')) // Should print 90.7
+  
