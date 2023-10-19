@@ -2,6 +2,7 @@
 const greetWorld = () => {
   return `Hello, World!`;
 };
+console.log(greetWorld());
 
 // CanIVote Function, basic if / else function
 const canIVote = (age) => {
@@ -86,39 +87,47 @@ console.log(reportingForDuty("Private", "Fido")); // Should return 'Private Fido
 console.log(reportingForDuty("Sargent", "Hernandez")); // Should return 'Private Fido reporting for duty!'
 
 // calculate Weight of different plantes based on earth. Use of Switch / case statements. Arrow Function Definition.
-const calculateWeight = (earthWeight, planet) =>{
-    planet = planet.toLowerCase();
-  
-    switch(planet){
-      case 'mercury':
-        return earthWeight * 0.378;
-      case 'venus':
-        return earthWeight * 0.907;
-      case 'mars':
-        return earthWeight * 0.377;
-      case 'jupiter':
-        return earthWeight * 2.36;
-      case 'saturn':
-        return earthWeight * 0.916;
-      default:
-        return `Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.`;
-    }
-  
+const calculateWeight = (earthWeight, planet) => {
+  planet = planet.toLowerCase();
+
+  switch (planet) {
+    case "mercury":
+      return earthWeight * 0.378;
+    case "venus":
+      return earthWeight * 0.907;
+    case "mars":
+      return earthWeight * 0.377;
+    case "jupiter":
+      return earthWeight * 2.36;
+    case "saturn":
+      return earthWeight * 0.916;
+    default:
+      return `Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.`;
   }
-  
-  // Uncomment the line below when you're ready to try out your function
-  console.log(calculateWeight(100, 'Jupiter')) // Should print 236
-  console.log(calculateWeight(100, 'Venus')) // Should print 90.7
-  
-  // Function to detect if a val is truthy or Falsy (If has a value different to empty or 0)
-function truthyOrFalsy(val){
-    if(val){
-      return true;
-    }else{
-      return false;
-    }
+};
+
+// Uncomment the line below when you're ready to try out your function
+console.log(calculateWeight(100, "Jupiter")); // Should print 236
+console.log(calculateWeight(100, "Venus")); // Should print 90.7
+
+// Function to detect if a val is truthy or Falsy (If has a value different to empty or 0)
+function truthyOrFalsy(val) {
+  if (val) {
+    return true;
+  } else {
+    return false;
   }
-  
-  // Uncomment the line below when you're ready to try out your function
-  console.log(truthyOrFalsy(0)) // Should print false
-  console.log(truthyOrFalsy('hI')) // Should print True
+}
+
+// Uncomment the line below when you're ready to try out your function
+console.log(truthyOrFalsy(0)); // Should print false
+console.log(truthyOrFalsy("hI")); // Should print True
+
+// function, return a num rounded to the value after.
+const numImaginaryFriends = (friends) => {
+  return Math.ceil(friends / 4);
+};
+
+// Uncomment the lines below when you're ready to try out your function
+console.log(numImaginaryFriends(20)); // Should print 5
+console.log(numImaginaryFriends(10)); // Should print 3 (2.5 rounded up!)
