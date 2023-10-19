@@ -75,3 +75,12 @@ const finalGrade = (grd1, grd2, grd3) => {
 
 console.log(finalGrade(99, 92, 95)); // Should print 'A'
 console.log(finalGrade(99, 92, 0)); // Should print 'A'
+
+// string Integreation / concatenated to return a String / response.
+const reportingForDuty = (rank, lastName) => {
+  return `${rank} ${lastName} reporting for duty!`;
+};
+
+// Uncomment the line below when you're ready to try out your function
+console.log(reportingForDuty("Private", "Fido")); // Should return 'Private Fido reporting for duty!'
+console.log(reportingForDuty("Sargent", "Hernandez")); // Should return 'Private Fido reporting for duty!'
