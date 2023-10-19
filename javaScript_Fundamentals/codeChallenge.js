@@ -131,3 +131,12 @@ const numImaginaryFriends = (friends) => {
 // Uncomment the lines below when you're ready to try out your function
 console.log(numImaginaryFriends(20)); // Should print 5
 console.log(numImaginaryFriends(10)); // Should print 3 (2.5 rounded up!)
+
+
+// String Interpolation.
+const sillySentence = (adj, verb, noun)=>{
+    return `I am so ${adj} because I ${verb} coding! Time to write some more awesome ${noun}!`
+  }
+  
+  // Uncomment the line below when you're ready to try out your function
+  console.log(sillySentence('excited', 'love', 'functions')) 
