@@ -110,3 +110,15 @@ const calculateWeight = (earthWeight, planet) =>{
   console.log(calculateWeight(100, 'Jupiter')) // Should print 236
   console.log(calculateWeight(100, 'Venus')) // Should print 90.7
   
+  // Function to detect if a val is truthy or Falsy (If has a value different to empty or 0)
+function truthyOrFalsy(val){
+    if(val){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  
+  // Uncomment the line below when you're ready to try out your function
+  console.log(truthyOrFalsy(0)) // Should print false
+  console.log(truthyOrFalsy('hI')) // Should print True
