@@ -132,34 +132,54 @@ const numImaginaryFriends = (friends) => {
 console.log(numImaginaryFriends(20)); // Should print 5
 console.log(numImaginaryFriends(10)); // Should print 3 (2.5 rounded up!)
 
-
 // String Interpolation.
-const sillySentence = (adj, verb, noun)=>{
-    return `I am so ${adj} because I ${verb} coding! Time to write some more awesome ${noun}!`
-  }
-  
-  // Uncomment the line below when you're ready to try out your function
-  console.log(sillySentence('excited', 'love', 'functions')) 
+const sillySentence = (adj, verb, noun) => {
+  return `I am so ${adj} because I ${verb} coding! Time to write some more awesome ${noun}!`;
+};
 
+// Uncomment the line below when you're ready to try out your function
+console.log(sillySentence("excited", "love", "functions"));
 
 // Age calculation. Get Actual date, do calculation.
-const howOld = (age, year) =>{
-    let currentDate = new Date();
-    let currentYear = currentDate.getFullYear();
-  
-    const yearDifference = year - currentYear;
-    const newAge = age + yearDifference;
-    if (newAge > age){
-      return `You will be ${newAge} in the year ${year}`;
-    } else if(newAge < 0){
-      return `The year ${year} was ${-newAge} years before you were born`;
-    } else{
-      return `You were ${newAge} in the year ${year}`;
+const howOld = (age, year) => {
+  let currentDate = new Date();
+  let currentYear = currentDate.getFullYear();
+
+  const yearDifference = year - currentYear;
+  const newAge = age + yearDifference;
+  if (newAge > age) {
+    return `You will be ${newAge} in the year ${year}`;
+  } else if (newAge < 0) {
+    return `The year ${year} was ${-newAge} years before you were born`;
+  } else {
+    return `You were ${newAge} in the year ${year}`;
+  }
+};
+
+// Once your function is written, write function calls to test your code!
+
+console.log(howOld(23, 2000));
+console.log(howOld(2, 2003));
+
+// Tip Calculator Based on the quality of the services and the total amount.
+const tipCalculator = (quality, total)=>{
+    const qual = quality.toLowerCase();
+    switch(qual) {
+      case 'excellent':
+        return total*.30;
+      case 'good':
+        return total*.20;
+      case 'ok':
+        return total*.15;
+      case 'bad':
+        return total*.05;
+      default:
+        return total*.18;
     }
   }
   
+  // Uncomment the line below when you're ready to try out your function
+  console.log(tipCalculator('good', 100)) //should return 20
+  console.log(tipCalculator('meh', 170)) //should return 20
+  console.log(tipCalculator('bad', 120)) //should return 6
   
-  // Once your function is written, write function calls to test your code!
-  
-  console.log(howOld(23,2000));
-  console.log(howOld(2,2003));
