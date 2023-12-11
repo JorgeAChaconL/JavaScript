@@ -68,3 +68,24 @@ for(let i = 0; i < rapperArray.length; i++){
     }
 }
 console.log("And if you don't know, now you Kimnow.");
+
+//For... of loops;
+//Spelling WIZARD;
+const spellingWord = 'hippopotamus';
+
+for(const letter of spellingWord){
+    console.log(letter);
+}
+
+//Polemon Catcher.
+//Write a for... loop that iterates through pokemonList.
+//Inside use console.log() and string interpolation with string 'You caugh a 'X'!;
+//One elements is 'Yoshi', if you encounter it use continue to skip it before logegd.
+const pokemonList = ['Pikachu', 'Charizard', 'Squirtle', 'Yoshi', 'Snorlax'];
+
+for(pokemon of pokemonList){
+  if(pokemon === 'Yoshi'){
+    continue;
+  }
+  console.log(`You caught a ${pokemon}!`)
+}
