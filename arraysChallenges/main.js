@@ -20,16 +20,16 @@ for (let i = 0; i < vacationSpots.length; i++) {
 }
 
 //Nested Loops
-const bobsFollowers = ['Maria','Pedro','Luis','Enrique'];
+const bobsFollowers = ["Maria", "Pedro", "Luis", "Enrique"];
 
-const tinasFollowers = ['Maria','Enrique','Jose'];
+const tinasFollowers = ["Maria", "Enrique", "Jose"];
 
 const mutualFollowers = [];
 
-for(let i = 0; i < bobsFollowers.length; i++){
-  for(let j = 0; j < tinasFollowers.length; j++){
-    if(bobsFollowers[i] === tinasFollowers[j]){
-      mutualFollowers.push(bobsFollowers[i])
+for (let i = 0; i < bobsFollowers.length; i++) {
+  for (let j = 0; j < tinasFollowers.length; j++) {
+    if (bobsFollowers[i] === tinasFollowers[j]) {
+      mutualFollowers.push(bobsFollowers[i]);
     }
   }
 }
@@ -37,12 +37,22 @@ for(let i = 0; i < bobsFollowers.length; i++){
 console.log(mutualFollowers);
 
 //While Loops
-const cards = ['diamond', 'spade', 'heart', 'club'];
+const cards = ["diamond", "spade", "heart", "club"];
 
 // Write your code below
-let currentCard = []
+let currentCard = [];
 
-while(currentCard != 'spade'){
+while (currentCard != "spade") {
   currentCard = cards[Math.floor(Math.random() * 4)];
   console.log(currentCard);
 }
+
+//Do... while statements.
+const cupsOfSugarNeeded = 3;
+
+let cupsAdded = 0;
+
+do {
+  cupsAdded++;
+  console.log(`Cup ${cupsAdded} was add `);
+} while (cupsAdded < cupsOfSugarNeeded);
